@@ -5,22 +5,26 @@
   </head>
   <body>
     <div ng-app="escoladeti2017">
-      <a ui-sref="modalidade-list" ui-sref-active="active">Listar modalidade</a>
-      <a ui-sref="modalidade-create"  ui-sref-active="active">Criar modalidade</a>
+      <a ui-sref="anamnese-list" ui-sref-active="active">Listar anamnese</a>
+      <a ui-sref="anamnese-create"  ui-sref-active="active">Criar anamnese</a>
       <div class="container">
         <ui-view></ui-view>
       </div>
     </div>
   </body>
+    <script src="node_modules/jquery.min.js"></script>
+
   <script src="node_modules/angular/angular.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
   <script src="node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
   <script src="node_modules/angular-ui-bootstrap/dist/ui-bootstrap.js"></script>
   <script src="node_modules/angular-uuid/angular-uuid.js"></script>
   <script src="app.js"></script>
-  <script src="app/modalidade/module.js"></script>
-  <script src="app/modalidade/controllers/modalidadeControllerList.js"></script>
-  <script src="app/modalidade/controllers/modalidadeControllerCreate.js"></script>
-  <script src="app/modalidade/controllers/modalidadeControllerEdit.js"></script>
-  <script src="app/modalidade/models/modalidadeModel.js"></script>
-  <script src="app/modalidade/services/modalidadeService.js"></script>
+  <script src="app/anamnese/module.js"></script>
+  <script src="app/anamnese/controllers/anamneseControllerList.js"></script>
+  <script src="app/anamnese/controllers/anamneseControllerCreate.js"></script>
+  <script src="app/anamnese/controllers/anamneseControllerEdit.js"></script>
+  <script src="app/anamnese/models/anamneseModel.js"></script>
+  <script src="app/anamnese/services/anamneseService.js"></script>
+ 
 </html>

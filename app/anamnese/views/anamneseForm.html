@@ -1,0 +1,18 @@
+<div class="container">
+  <form name="anamneseForm" ng-submit="save(anamnese)" novalidate>
+    <div class="row">
+
+      <div class="form-group col-md-6">
+        <label for="descricao">Pergunta:</label>
+        <input type="text" class="form-control" id="nome" ng-model="anamnese.pergunta" ng-required="true">
+      </div>
+      <div class="col-md-6">
+        <label for="pergunta">Tipo de pergunta:</label>
+        <label class="radio-inline"><input type="radio" name="optradio" ng-model="anamnese.tipo">Descritiva</label>
+        <label class="radio-inline"><input type="radio" name="optradio" ng-model="anamnese.tipo">Objetiva</label>
+      </div>
+    </div>
+
+    <button type="submit" class="btn btn-success" ng-disabled="anamneseForm.$invalid">Salvar</button>
+  </form>
+</div>
