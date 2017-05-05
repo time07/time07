@@ -2,18 +2,16 @@
   <tr>
     <th>ID</th>
     <th>Descricao</th>
-    <th>Peso</th>
-    <th>Cor</th>
+    <th>Valor</th>
     <th>Ações</th>
   </tr>
-  <tr ng-repeat="p in produtos">
-    <td>{{p.id}}</td>
-    <td>{{p.descricao}}</td>
-    <td>{{p.peso}}</td>
-    <td>{{p.cor}}</td>
+  <tr ng-repeat="m in modalidades">
+    <td>{{m.id}}</td>
+    <td>{{m.nome}}</td>
+    <td>{{m.valor}}</td>
     <td>
-      <button type="button" class="btn btn-primary" ng-click="confirmarExclusao(p.id)">Excluir</button>
-      <button type="button" class="btn btn-primary" ng-click="entrarModoEdicao(p.id)">Editar</button>
+      <button type="button" class="btn btn-primary" ng-click="confirmarExclusao(m.id)">Excluir</button>
+      <button type="button" class="btn btn-primary" ng-click="entrarModoEdicao(m.id)">Editar</button>
     </td>
   </tr>
 </table>

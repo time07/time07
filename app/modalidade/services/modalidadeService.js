@@ -3,10 +3,10 @@ modalidade.factory('modalidadeService', modalidadeService);
 function modalidadeService(uuid) {
 
   function getAll() {
-    
+    return this.modalidades;
   }
 
-  function save(produto) {
+  function save(modalidade) {
    
   }
 
