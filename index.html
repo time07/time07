@@ -7,6 +7,9 @@
     <div ng-app="escoladeti2017">
       <a ui-sref="modalidade-list" ui-sref-active="active">Listar modalidade</a>
       <a ui-sref="modalidade-create"  ui-sref-active="active">Criar modalidade</a>
+
+      <a ui-sref="matricula-create" ui-sref-active="active">Criar matrícula</a>
+      <a ui-sref="matricula-list" ui-sref-active="active">Listar matriculas</a>
       <div class="container">
         <ui-view></ui-view>
       </div>
@@ -23,4 +26,13 @@
   <script src="app/modalidade/controllers/modalidadeControllerEdit.js"></script>
   <script src="app/modalidade/models/modalidadeModel.js"></script>
   <script src="app/modalidade/services/modalidadeService.js"></script>
+
+  <!-- Matricula -->
+  <script type="text/javascript" src="matricula/module.js"></script>
+  <!-- controllers -->
+  <script type="text/javascript" src="matricula/controllers/matriculaControllerCreate.js"></script>
+  <script type="text/javascript" src="matricula/controllers/matriculaControllerEdit.js"></script>
+  <script type="text/javascript" src="matricula/controllers/matriculaControllerList.js"></script>
+  <!-- service -->
+  <script type="text/javascript" src="matricula/services/matriculaService.js"></script>
 </html>
