@@ -1,0 +1,19 @@
+<table class="table table-striped table-bordered">
+  <tr>
+    <th>ID</th>
+    <th>Descricao</th>
+    <th>Peso</th>
+    <th>Cor</th>
+    <th>Ações</th>
+  </tr>
+  <tr ng-repeat="p in produtos">
+    <td>{{p.id}}</td>
+    <td>{{p.descricao}}</td>
+    <td>{{p.peso}}</td>
+    <td>{{p.cor}}</td>
+    <td>
+      <button type="button" class="btn btn-primary" ng-click="confirmarExclusao(p.id)">Excluir</button>
+      <button type="button" class="btn btn-primary" ng-click="entrarModoEdicao(p.id)">Editar</button>
+    </td>
+  </tr>
+</table>
