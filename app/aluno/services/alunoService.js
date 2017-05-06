@@ -2,7 +2,7 @@ aluno.factory("alunoService",alunoService);
 
 function alunoService(){
   function getAll() {
-    return this.modalidades;
+    return this.alunos;
   }
 
   function save(modalidade) {
@@ -22,7 +22,7 @@ function alunoService(){
     getAll : getAll,
     save : save,
     getById : getById,
-    modalidades : [
+    alunos : [
 
     ]
   };
