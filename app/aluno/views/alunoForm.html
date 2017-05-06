@@ -1,14 +1,123 @@
-<form class="form-inline">
+
+<br>
+<br>
+<h1>学生を登録します</h1>
+<form name="alunoForm" class="form-horizontal" ng-submit="save(aluno)" novalidate>
   <div class="form-group">
-    <label for="email">Email address:</label>
-    <input type="email" class="form-control" id="email">
+    <label class="control-label col-sm-2" for="matricula">Matrícula:</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="matricula" ng-model="aluno.matricula" placeholder="Matrícula" required>
+    </div>
   </div>
+
   <div class="form-group">
-    <label for="pwd">Password:</label>
-    <input type="password" class="form-control" id="pwd">
+    <label class="control-label col-sm-2" for="nome">Nome:</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="nome" ng-model="aluno.nome" placeholder="Nome" required>
+    </div>
   </div>
-  <div class="checkbox">
-    <label><input type="checkbox"> Remember me</label>
+
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="endereco">Endereço:</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="endereco" ng-model="aluno.endereco" placeholder="Endereço" required>
+    </div>
   </div>
-  <button type="submit" class="btn btn-default">Submit</button>
+
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="bairro">Bairro:</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="bairro" ng-model="aluno.bairro" placeholder="Bairro" required>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="cep">CEP:</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="cep" ng-model="aluno.cep" placeholder="CEP" required>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="cidade">Cidade:</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="cidade" ng-model="aluno.cidade" placeholder="Cidade" required>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="UF">UF:</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="UF" ng-model="aluno.uf" placeholder="UF" required>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="telefone">Telefone:</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="telefone" ng-model="aluno.telefone" placeholder="Telefone" required>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="celular">Celular:</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="celular" ng-model="aluno.celular" placeholder="Celular" required>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="sexo">Sexo:</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="sexo" ng-model="aluno.sexo" placeholder="Sexo" required>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="cpf">CPF:</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="cpf" ng-model="aluno.cpf" placeholder="CPF" required>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="identidade">Identidade:</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="identidade" ng-model="aluno.identidade" placeholder="Identidade" required>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="UFRG">UF - RG:</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="UFRG" ng-model="aluno.ufrg" placeholder="UF - RG" required>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="email">E-Mail:</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="email" ng-model="aluno.email" placeholder="E-Mail" required>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="data">Data de Nascimento:</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="data" ng-model="aluno.data" placeholder="Data de Nascimento" required>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="idade">Idade:</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="idade" ng-model="aluno.idade" placeholder="Idade" required>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <button type="submit" class="btn btn-success" ng-disabled="alunoForm.$invalid">Cadastrar</button>
+    </div>
+  </div>
 </form>

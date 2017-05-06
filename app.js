@@ -1,1 +1,1 @@
-var app = angular.module('escoladeti2017', ['ui.router', 'angular-uuid', 'modalidade']);
+var app = angular.module('escoladeti2017', ['ui.router', 'angular-uuid', 'modalidade','aluno']);
