@@ -5,6 +5,7 @@ function modalidadeControllerCreate($scope, modalidadeService) {
 
     function save(modalidade){
         var promise = modalidadeService.save(modalidade);
+        
     }
 
     $scope.save = save;
