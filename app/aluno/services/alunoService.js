@@ -14,12 +14,10 @@ function alunoService(uuid){
       if (alunos[index].id = aluno.id) {
         break;
       }
+    }
     for (var y = index; y < alunos.length; y++) {
       alunos[y] = alunos[y+1];      
     }
-      
-    }
-
   }
 
   function getById(id) {
