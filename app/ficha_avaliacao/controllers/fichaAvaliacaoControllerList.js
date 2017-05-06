@@ -1,16 +1,16 @@
-modalidade.controller("modalidadeControllerList", modalidadeControllerList);
+fichaAvaliacao.controller("fichaAvaliacaoControllerList", fichaAvaliacaoControllerList);
 
-function modalidadeControllerList($scope, modalidadeService) {
-    $scope.modalidades = [];
+function fichaAvaliacaoControllerList($scope, fichaAvaliacaoService) {
+    $scope.fichaAvaliacao = [];
 
     function getAll() {
-        $scope.modalidades = modalidadeService.getAll();
+        $scope.fichasAvaliacoes = fichaAvaliacaoService.getAll();
         //promise.then(onLoadSuccess);
         //promise.catch(onLoadError);
     }
 
     function onLoadSuccess(data){
-        $scope.modalidades = data;
+        $scope.fichasAvaliacoes = data;
     }
 
     function onLoadError(data){

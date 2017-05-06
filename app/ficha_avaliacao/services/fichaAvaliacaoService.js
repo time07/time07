@@ -1,21 +1,25 @@
-modalidade.factory('modalidadeService', modalidadeService);
+fichaAvaliacao.factory('fichaAvaliacaoService', fichaAvaliacaoService);
 
-function modalidadeService(uuid) {
+function fichaAvaliacaoService(uuid) {
 
   function getAll() {
-    return this.modalidades;
+    return this.fichaAvaliacao;
   }
 
-  function save(modalidade) {
-   
+  function save(fichaAvaliacao) {
+
   }
 
   function remove(id) {
-    
+
   }
 
   function getById(id) {
-   
+
+  }
+
+  function imc(fichaAvaliacao){
+    return fichaAvaliacao.peso / (fichaAvaliacao.altura * fichaAvaliacao.altura);
   }
 
   return {
@@ -23,8 +27,9 @@ function modalidadeService(uuid) {
     getAll : getAll,
     save : save,
     getById : getById,
-    modalidades : [
-      
+    imc: imc,
+    fichaAvaliacao : [
+
     ]
   };
 

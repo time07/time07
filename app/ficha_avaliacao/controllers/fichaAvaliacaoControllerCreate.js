@@ -1,11 +1,12 @@
-modalidade.controller("modalidadeControllerCreate", modalidadeControllerCreate);
+fichaAvaliacao.controller("fichaAvaliacaoControllerCreate", fichaAvaliacaoControllerCreate);
 
-function modalidadeControllerCreate($scope, modalidadeService) {
-    $scope.modalidade = {};
+function fichaAvaliacaoControllerCreate($scope, fichaAvaliacaoService) {
+    $scope.fichaAvaliacao = {};
 
-    function save(modalidade){
-        var promise = modalidadeService.save(modalidade);
+    function save(fichaAvaliacao){
+        fichaAvaliacaoService.imc(fichaAvaliacao)
+        var promise = fichaAvaliacaoService.save(fichaAvaliacao);
     }
-
+    $scope.imc = fichaAvaliacao.imc;
     $scope.save = save;
 }

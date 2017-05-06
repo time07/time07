@@ -1,5 +1,5 @@
-modalidade.controller("modalidadeControllerEdit", modalidadeControllerEdit);
+fichaAvaliacao.controller("fichaAvaliacaoControllerEdit", fichaAvaliacaoControllerEdit);
 
-function modalidadeControllerEdit() {
+function fichaAvaliacaoControllerEdit() {
 
 }
