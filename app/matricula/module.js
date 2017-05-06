@@ -1,4 +1,4 @@
-var matricula = angular.module('matricula', []);
+var matricula = angular.module("matricula", []);
 
 matricula.config(configRoutes);
 
@@ -7,26 +7,24 @@ function configRoutes($stateProvider){
 		name: 'matricula-create',
 		url: '/matricula/create',
 		controller: 'matriculaControllerCreate',
-		templateUrl: 'matricula/views/matricula-create.html'
-	};
-
-	var matriculaList = {
-		name: 'matricula-list',
-		url: '/matricula/list',
-		controller: 'matriculaControllerList',
-		templateUrl: 'matricula/views/matricula-list.html'
+		templateUrl: 'app/matricula/views/matriculaForm.html'
 	};
 
 	var matriculaEdit = {
 		name: 'matricula-edit',
 		url: '/matricula/edit',
 		controller: 'matriculaControllerEdit',
-		templateUrl: 'matricula/views/matricula-edit.html'
+		templateUrl: 'app/matricula/views/matriculaForm.html'
+	};
+
+	var matriculaList = {
+		name: 'matricula-list',
+		url: '/matricula/list',
+		controller: 'matriculaControllerList',
+		templateUrl: 'app/matricula/views/matriculaList.html'
 	};
 
 	$stateProvider.state(matriculaCreate);
 	$stateProvider.state(matriculaList);
 	$stateProvider.state(matriculaEdit);
-
-	//$urlRouterProvider.otherwise("/matricula/create");
 }
