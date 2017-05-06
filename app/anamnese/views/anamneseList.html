@@ -1,17 +1,16 @@
 <table class="table table-striped table-bordered">
   <tr>
     <th>ID</th>
-    <th>Descricao</th>
-    <th>Valor</th>
-    <th>Ações</th>
+    <th>Pergunta</th>
+    <th>Tipo</th>
   </tr>
-  <tr ng-repeat="m in anamneses">
-    <td>{{m.id}}</td>
-    <td>{{m.nome}}</td>
-    <td>{{m.valor}}</td>
+  <tr ng-repeat="anamnese in anamneses">
+    <td>{{anamnese.id}}</td>
+    <td>{{anamnese.pergunta}}</td>
+    <td>{{anamnese.tipo}}</td>
     <td>
-      <button type="button" class="btn btn-primary" ng-click="confirmarExclusao(m.id)">Excluir</button>
-      <button type="button" class="btn btn-primary" ng-click="entrarModoEdicao(m.id)">Editar</button>
+      <button type="button" class="btn btn-primary" ng-click="confirmarExclusao(anamnese.id)">Excluir</button>
+      <button type="button" class="btn btn-primary" ng-click="entrarModoEdicao(anamnese.id)">Editar</button>
     </td>
   </tr>
 </table>

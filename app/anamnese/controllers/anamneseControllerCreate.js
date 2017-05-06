@@ -1,11 +1,12 @@
 anamnese.controller("anamneseControllerCreate", anamneseControllerCreate);
 
-function anamneseControllerCreate($scope, anamneseService) {
+function anamneseControllerCreate($scope,$state, anamneseService) {
     $scope.anamnese = {};
+    $scope.save = save;
 
     function save(anamnese){
-        var promise = anamneseService.save(anamnese);
+        anamneseService.save(anamnese);
+        $state.go('anamnese-list');
     }
 
-    $scope.save = save;
 }
