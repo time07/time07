@@ -1,12 +1,12 @@
 matricula.controller('matriculaControllerCreate', matriculaControllerCreate);
 
-function matriculaControllerCreate() {
+function matriculaControllerCreate($scope, $state, matriculaService) {
 	$scope.matricula = {};
 
-    function save(matricula){
-        var promise = matriculaService.save(matricula);
-        
+   $scope.save = function save(matricula){
+        matriculaService.save(matricula);
+        $state.go('matricula-list');
     }
 
-    $scope.save = save;
+     
 }

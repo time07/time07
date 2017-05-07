@@ -10,18 +10,18 @@ function configRoutes($stateProvider){
 		templateUrl: 'app/matricula/views/matriculaForm.html'
 	};
 
-	var matriculaEdit = {
-		name: 'matricula-edit',
-		url: '/matricula/edit',
-		controller: 'matriculaControllerEdit',
-		templateUrl: 'app/matricula/views/matriculaForm.html'
-	};
-
 	var matriculaList = {
 		name: 'matricula-list',
 		url: '/matricula/list',
 		controller: 'matriculaControllerList',
 		templateUrl: 'app/matricula/views/matriculaList.html'
+	};
+
+	var matriculaEdit = {
+		name: 'matricula-edit',
+		url: '/matricula/:id/edit',
+		controller: 'matriculaControllerEdit',
+		templateUrl: 'app/matricula/views/matriculaForm.html'
 	};
 
 	$stateProvider.state(matriculaCreate);

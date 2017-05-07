@@ -1,33 +1,40 @@
 <div class="container">
   <form name="matriculaForm" ng-submit="save(matricula)" novalidate>
+
     <div class="form-group">
-      <label for="planoPagamento">Plano de pagamento:</label>
+      <label>Plano de pagamento:</label>
       <select class="form-control" ng-model="matricula.plano">
       	<option value="">Selecione</option>
       </select>
     </div>
+
     <div class="form-group">
       <label for="dataInicio">Data de início:</label>
-      <input type="date" class="form-control" id="dataInicio" ng-model="matricula.dataInicio" ng-required="true">
+      <input type="text" class="form-control" id="dataInicio" ng-model="matricula.dataInicio" ng-required="true">
     </div>
+
     <div class="form-group">
       <label for="dataVencimento">Data de vencimento:</label>
-      <input type="date" class="form-control" id="dataVencimento" ng-model="matricula.dataVencimento" ng-required="true">
+      <input type="text" class="form-control" id="dataVencimento" ng-model="matricula.dataVencimento" ng-required="true">
     </div>
+
     <div class="form-group">
-      <label for="tipoDesconto">Tipo de desconto:</label>
+      <label>Tipo de desconto:</label>
       <select class="form-control" ng-model="matricula.tipoDesconto">
       	<option value="">Selecione</option>
       </select>
     </div>
+
     <div class="form-group">
       <label for="valorDesconto">Valor do desconto:</label>
-      <input type="date" class="form-control" id="valorDesconto" ng-model="matricula.valorDesconto" ng-required="true">
+      <input type="text" class="form-control" id="valorDesconto" ng-model="matricula.valorDesconto" ng-required="true">
     </div>
+
     <div class="form-group">
       <label for="valorFinal">Valor final:</label>
-      <input type="date" class="form-control" id="valorFinal" ng-model="matricula.valorFinal" ng-required="true">
+      <input type="text" class="form-control" id="valorFinal" ng-model="matricula.valorFinal" ng-required="true">
     </div>
+
     <button type="submit" class="btn btn-success" ng-disabled="matriculaForm.$invalid">Salvar</button>
   </form>
 </div>

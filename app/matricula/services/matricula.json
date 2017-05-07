@@ -1,0 +1,11 @@
+{
+	"id": 1,
+	"plano_pagamento": "mensal",
+	"data_inicio": "01/05/2017",
+	"dia_vencimento": 5,
+	"tipo_desconto": "DESCONTO POR VALOR",
+	"valor_desconto": 10,
+	"valor_final": 250,
+	"id_aluno": 1,
+	"id_turma": 1
+}
